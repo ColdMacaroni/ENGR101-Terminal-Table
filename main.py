@@ -33,7 +33,17 @@ MAX_COLUMN_WIDTH = 30
 # These dates determine the monday for each week.
 # These are for: Trimester 1
 WEEK_STARTS = (date.fromisoformat('2023-02-27'),
-               date.fromisoformat('2023-03-01'))
+               date.fromisoformat('2023-03-06'),
+               date.fromisoformat('2023-03-13'),
+               date.fromisoformat('2023-03-20'),
+               date.fromisoformat('2023-03-27'),
+               date.fromisoformat('2023-04-03'),
+               date.fromisoformat('2023-04-24'),
+               date.fromisoformat('2023-05-01'),
+               date.fromisoformat('2023-05-08'),
+               date.fromisoformat('2023-05-15'),
+               date.fromisoformat('2023-05-22'),
+               date.fromisoformat('2023-05-29'))
 
 def get_schedule_webpage(link: str | None = None) -> str:
     """
