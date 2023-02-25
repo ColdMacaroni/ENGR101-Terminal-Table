@@ -93,7 +93,7 @@ def format_week_table(tab: bs4.Tag, strip_header: int = 0) -> str:
         for ch in tb.children:
             # These are all empty for whatever reason
             if isinstance(ch, bs4.NavigableString):
-                assert len(ch.text), "NavigableString len is not 1"
+                assert len(ch.text) == 1, "NavigableString len is not 1"
                 continue
 
             ls = []
@@ -101,7 +101,7 @@ def format_week_table(tab: bs4.Tag, strip_header: int = 0) -> str:
             for content in ch.children:
                 # These are all empty for whatever reason
                 if isinstance(ch, bs4.NavigableString):
-                    assert len(ch.text), "NavigableString len is not 1"
+                    assert len(ch.text) == 1, "NavigableString len is not 1"
                     continue
 
                 ls.append('\n'.join(textwrap.wrap(content.text.strip(), MAX_COLUMN_WIDTH)))
