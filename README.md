@@ -31,3 +31,15 @@ You're on Week 1. This week starts on 2023-02-27
 │                            │ Due 6 March                    │                             │                             │                          │
 ╘════════════════════════════╧════════════════════════════════╧═════════════════════════════╧═════════════════════════════╧══════════════════════════╛
 ```
+
+## .env
+You need a .env on the same folder with stuff like
+```
+LINK="https://ecs.wgtn.ac.nz/Courses/ENGR101_2023T1/LectureSchedule"
+LAST_UPDATE_FN="last_update"
+SCHEDULE_OUT_FN="schedule"
+```
+I recommend absolute paths tho
+
+## Use
+Just slap this onto a dialy cron & add a `cat schedule` to your .whateverrc and boom easy win
