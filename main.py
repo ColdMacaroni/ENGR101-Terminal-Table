@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # main.py
-# Sofia 2022. Licensed under GPLv3
+# ColdMacaroni 2023. Licensed under GPLv3
 # A script that pulls the weekly schedule for this week and saves to a file
 
 import requests
