@@ -24,7 +24,7 @@ SCHEDULE_OUT_FN = getenv("SCHEDULE_OUT_FN")
 UPDATE_DAYS_BEFORE_START = 3
 
 # This determines how old the last schedule should be allowed to be. This is in
-# case the schedule is updates within the same week can be received.
+# case the schedule is updated within the same week can be received.
 # SCHED_EXP = SCHEDULE_EXPIRATION
 SCHED_EXP_HOURS = 24
 
@@ -59,13 +59,6 @@ def get_schedule_webpage(link: str | None = None) -> str:
         raise ValueError(f"Request to {LINK} returned {res.status_code}")
     
     return res.text
-
-    # TODO: Create requests
-    # Temporary return to get HTML without spamming website
-    with open("html", "r") as f:
-        txt = f.read()
-
-    return txt
 
 
 def find_week(day: date | datetime) -> int:
